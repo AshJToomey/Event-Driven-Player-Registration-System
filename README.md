@@ -51,8 +51,11 @@ After submitting the form:
 - A success popup confirms registration.
 
 Example Output:
+
 Player was saved: Ashley 100
+
 Message sent to: Ashley
+
 Teammates were notified: Ashley
 
 ## ✅ Features
