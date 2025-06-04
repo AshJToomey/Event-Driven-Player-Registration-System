@@ -13,10 +13,14 @@ This is a simple Python project demonstrating **event-driven programming** with 
 ## 📂 File Structure
 
 event_systems_project/
-├── main.py # GUI + main logic to register a player and trigger events
-├── functions.py # Event handler functions (e.g., notify teammates)
+
+├── main.py          # GUI + main logic to register a player and trigger events
+
+├── functions.py     # Event handler functions (e.g., notify teammates)
+
 ├── event_systems.py # Core event registration and dispatch system
-└── README.md # Project documentation
+
+└── README.md        # Project documentation
 
 ## 🚀 How to Run
 
