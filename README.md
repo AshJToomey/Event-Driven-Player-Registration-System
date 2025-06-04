@@ -51,11 +51,14 @@ pytest
 After submitting the form:
 
 ✅ Player is saved
+
 ✅ Two event handlers are triggered:
 
-A message is sent
+  - A message is sent
 
-Teammates are notified
+  - Teammates are notified
+
+
 ✅ A success popup appears
 
 Example Output:
