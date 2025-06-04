@@ -1,6 +1,6 @@
 # ⚽ Event-Driven Player Registration System
 
-This is a simple Python project demonstrating **event-driven programming** with a **Tkinter-based graphical interface**. It simulates a football environment where registering a player triggers automated actions such as notifying teammates and sending a message.
+This is a simple Python project demonstrating event-driven programming with a Tkinter graphical interface. It simulates a football environment where registering a player triggers automated actions like notifying teammates and sending messages.
 
 
 
@@ -8,7 +8,8 @@ This is a simple Python project demonstrating **event-driven programming** with 
 
 - **Event-Driven Architecture**:Events like player_registered trigger registered handler functions.
 - **GUI Interface**: A user-friendly Tkinter window replaces terminal inputs.
-- **Modular Code**: Logic is split across main.py, functions.py, and event_systems.py for clarity and reusability.
+- **Modular Code**: Logic is split across separate files for clarity and reusability.
+- **Testing with Pytest**: Core logic is tested using pytest for reliability.
 
 ## 📂 File Structure
 
@@ -20,35 +21,42 @@ event_systems_project/
 
 ├── event_systems.py # Core event registration and dispatch system
 
+├── test_event_systems.py # Pytest tests for event logic
+
 └── README.md        # Project documentation
 
 ## 🚀 How to Run
 
-1. Clone or download the project:
+1. Clone the project:
 
 git clone https://github.com/yourusername/event-system-gui.git
 cd event-system-gui
 
-2. Make sure you have Python 3 installed.
-
-3. Run the app:
+2. Run the app:
 
 python main.py
 
-4. A window will open. Enter a player's name and goal count, then click "Register Player".
+3. A window will open. Enter a player's name and goal count, then click "Register Player".
 
-## 🧪 Example Behavior
+
+## 🧪 Testing
+We use pytest to ensure the event system works as expected.
+
+Run Tests:
+
+pip install pytest
+pytest
+
+## 📌 Example Behavior
 After submitting the form:
 
-- The player is saved (output printed to the terminal).
+✅ Player is saved
+✅ Two event handlers are triggered:
 
-- Two events fire:
+A message is sent
 
-   - A message is sent.
-
-   - Teammates are notified.
-
-- A success popup confirms registration.
+Teammates are notified
+✅ A success popup appears
 
 Example Output:
 
@@ -59,25 +67,27 @@ Message sent to: Ashley
 Teammates were notified: Ashley
 
 ## ✅ Features
-Custom event registration and dispatch system
+- Custom event registration and dispatch system
 
-Multiple handlers per event
+- Multiple handlers per event
 
-GUI for user interaction
+- GUI for user interaction
 
-Clean, modular structure
+- Clean, modular structure
+
+- Unit tests with pytest
+
 
 ## 💡 Possible Extensions
-Add event types like goal_scored, injury_reported
+- Add event types like goal_scored, injury_reported
 
-Save players to a file or database
+- Save players to a file or database
 
-Display a list of registered players in the GUI
+- Display registered players in the GUI
 
-Use logging instead of print statements
+- Replace print with logging
 
-Add automated tests with unittest or pytest
-
+- Add more unit tests
 
 ## 📚 License
 This project is for educational purposes. Feel free to explore, modify, and build on it!
